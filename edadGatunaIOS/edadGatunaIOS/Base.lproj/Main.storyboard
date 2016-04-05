@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="edadGatunaIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calcular la edad de un gato" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="711-GT-TZ4">
+                                <rect key="frame" x="152" y="37" width="297" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="f8h-H9-Agk"/>
+                                    <constraint firstAttribute="width" constant="297" id="hHe-Sx-mIX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Introduce una edad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXU-4k-kll">
+                                <rect key="frame" x="85" y="118" width="159" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mmw-Ct-CwI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mmw-Ct-CwI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="118" width="159" height="21"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="mmw-Ct-CwI"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwS-IT-ejh">
+                                <rect key="frame" x="347" y="178" width="177" height="30"/>
+                                <color key="backgroundColor" red="0.59038063750000003" green="0.74652777780000001" blue="0.51768568010000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="DY4-E7-8bW"/>
+                                    <constraint firstAttribute="height" constant="30" id="vQk-Rm-fyr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DY4-E7-8bW"/>
+                                        <exclude reference="vQk-Rm-fyr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="DY4-E7-8bW"/>
+                                        <include reference="vQk-Rm-fyr"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="edadGatuna:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1YM-tk-5bQ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce la edad del gato" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sFT-ds-Btx">
+                                <rect key="frame" x="323" y="114" width="210" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="csA-vu-0vh"/>
+                                    <constraint firstAttribute="height" constant="30" id="i3L-Cs-fuP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="csA-vu-0vh"/>
+                                        <exclude reference="i3L-Cs-fuP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="217" y="115" width="210" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="csA-vu-0vh"/>
+                                        <include reference="i3L-Cs-fuP"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5B-Zt-OTs">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="iCd-Yf-8gc">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="89"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="163" id="q1G-Fq-xw5">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="297"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iCd-Yf-8gc"/>
+                                        <exclude reference="q1G-Fq-xw5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="iCd-Yf-8gc"/>
+                                        <include reference="q1G-Fq-xw5"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SwS-IT-ejh" firstAttribute="top" secondItem="sFT-ds-Btx" secondAttribute="bottom" constant="57" id="0PK-Ma-BoI"/>
+                            <constraint firstItem="W5B-Zt-OTs" firstAttribute="top" secondItem="SwS-IT-ejh" secondAttribute="bottom" constant="81" id="4f7-Q7-BzU"/>
+                            <constraint firstItem="W5B-Zt-OTs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CwP-Jd-fqr"/>
+                            <constraint firstItem="SwS-IT-ejh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Q8i-eN-z65"/>
+                            <constraint firstItem="sFT-ds-Btx" firstAttribute="leading" secondItem="NXU-4k-kll" secondAttribute="trailing" constant="34" id="SFs-aQ-7aG"/>
+                            <constraint firstItem="711-GT-TZ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z24-cK-VdQ"/>
+                            <constraint firstItem="sFT-ds-Btx" firstAttribute="top" secondItem="711-GT-TZ4" secondAttribute="bottom" constant="38" id="c8l-mc-3Iv"/>
+                            <constraint firstItem="711-GT-TZ4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="fNL-uv-Sp5"/>
+                            <constraint firstItem="sFT-ds-Btx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gVU-bk-SZh"/>
+                            <constraint firstItem="NXU-4k-kll" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ovQ-AP-4gt"/>
+                            <constraint firstItem="NXU-4k-kll" firstAttribute="top" secondItem="711-GT-TZ4" secondAttribute="bottom" constant="41" id="s8e-vu-zdf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="W5B-Zt-OTs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ovQ-AP-4gt"/>
+                                <exclude reference="s8e-vu-zdf"/>
+                                <exclude reference="SFs-aQ-7aG"/>
+                                <exclude reference="c8l-mc-3Iv"/>
+                                <exclude reference="gVU-bk-SZh"/>
+                                <exclude reference="0PK-Ma-BoI"/>
+                                <exclude reference="Q8i-eN-z65"/>
+                                <exclude reference="4f7-Q7-BzU"/>
+                                <exclude reference="CwP-Jd-fqr"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="W5B-Zt-OTs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ovQ-AP-4gt"/>
+                                <include reference="s8e-vu-zdf"/>
+                                <include reference="SFs-aQ-7aG"/>
+                                <include reference="c8l-mc-3Iv"/>
+                                <include reference="gVU-bk-SZh"/>
+                                <include reference="0PK-Ma-BoI"/>
+                                <include reference="Q8i-eN-z65"/>
+                                <include reference="4f7-Q7-BzU"/>
+                                <include reference="CwP-Jd-fqr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="datotxt" destination="sFT-ds-Btx" id="5bi-jU-iD3"/>
+                        <outlet property="mostratTxt" destination="W5B-Zt-OTs" id="qc3-iW-vgo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619.5" y="424.5"/>
+        </scene>
+    </scenes>
+</document>
